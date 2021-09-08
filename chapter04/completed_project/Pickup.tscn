@@ -8,24 +8,25 @@ extents = Vector2( 51.6327, 32.7779 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "animThob"
-length = 2.0
+length = 3.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
+tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
-"transitions": PoolRealArray( 1, -2, 1 ),
+"times": PoolRealArray( 0, 1, 2, 3.1 ),
+"transitions": PoolRealArray( 1, -1, 1, -5.27803 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1.5, 1.5 ), Vector2( 1, 1 ) ]
 }
 
 [node name="Pickup" type="Area2D" groups=[
 "Pickup",
 ]]
+scale = Vector2( 1.43272, 1.43272 )
 z_index = 10
 script = ExtResource( 2 )
 
@@ -38,4 +39,5 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "animThob"
 anims/animThob = SubResource( 2 )
+
 [connection signal="body_entered" from="." to="." method="_on_Pickup_body_entered"]

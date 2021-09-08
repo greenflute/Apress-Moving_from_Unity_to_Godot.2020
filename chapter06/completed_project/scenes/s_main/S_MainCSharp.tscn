@@ -64,6 +64,7 @@ material/0 = ExtResource( 5 )
 [node name="StaticBody" type="StaticBody" parent="ArenaGeometry/Floor1"]
 
 [node name="CollisionShape" type="CollisionShape" parent="ArenaGeometry/Floor1/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 4.54747e-13, 1, 0, 0, 0 )
 shape = SubResource( 3 )
 
 [node name="Slope1" type="MeshInstance" parent="ArenaGeometry"]
@@ -157,31 +158,37 @@ shape = SubResource( 5 )
 environment = ExtResource( 1 )
 
 [node name="OmniLight1" type="OmniLight" parent="Lighting"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 6.2499 )
 light_color = Color( 0.811765, 0.905882, 1, 1 )
 light_energy = 1.5
 omni_range = 25.0
 
 [node name="OmniLight2" type="OmniLight" parent="Lighting"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 7, 12 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 7, 13.9373 )
 light_color = Color( 0.811765, 0.905882, 1, 1 )
 light_energy = 1.5
 omni_range = 25.0
 
 [node name="OmniLight3" type="OmniLight" parent="Lighting"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 7, -12 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6303, 7, -12 )
 light_color = Color( 0.811765, 0.905882, 1, 1 )
 light_energy = 1.5
 omni_range = 25.0
 
 [node name="OmniLight4" type="OmniLight" parent="Lighting"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 7, 12 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0488, 7, 12 )
 light_color = Color( 0.811765, 0.905882, 1, 1 )
 light_energy = 1.5
 omni_range = 25.0
 
 [node name="OmniLight5" type="OmniLight" parent="Lighting"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 7, -12 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.32949, 7, -12 )
+light_color = Color( 0.811765, 0.905882, 1, 1 )
+light_energy = 1.5
+omni_range = 25.0
+
+[node name="OmniLight6" type="OmniLight" parent="Lighting"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52081, 14, -8.20237 )
 light_color = Color( 0.811765, 0.905882, 1, 1 )
 light_energy = 1.5
 omni_range = 25.0
